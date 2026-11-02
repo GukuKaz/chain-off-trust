@@ -9,7 +9,7 @@ approved_packages = [
 ]
 
 declared_packages = [
-    "requesst",
+    "requests",
     "flask",
 ]
 
