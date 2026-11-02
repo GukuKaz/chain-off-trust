@@ -29,6 +29,11 @@ jobs:
           python3 --version
           git --version
 
+      - name: Runner environment simulation
+        run: |
+          echo "=== RUNNER ENVIRONMENT TEST ==="
+          ~/runner-lab/runner-test.sh
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -43,7 +48,4 @@ jobs:
       - name: Check for possible typosquatting
         run: python check_dependencies.py
 
-      - name: Runner environment simulation
-        run: |
-          echo "=== RUNNER ENVIRONMENT TEST ==="
-          ~/runner-lab/runner-test.sh
+      
