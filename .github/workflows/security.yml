@@ -32,3 +32,6 @@ jobs:
 
       - name: Run dependency audit
         run: pip-audit
+
+      - name: Check for possible typosquatting
+        run: python check_dependencies.py
